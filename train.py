@@ -108,9 +108,9 @@ def valid(val_loader, network):
 
 
 if __name__ == '__main__':
-    setting_filename = os.path.join('configs', args.exp, args.model+'.json')
+    setting_filename = os.path.join('configs', args.exp, args.model+'Main-m.json')
     if not os.path.exists(setting_filename):
-        setting_filename = os.path.join('configs', args.exp, 'default.json')
+        setting_filename = os.path.join('configs', args.exp, '.json')
     with open(setting_filename, 'r') as f:
         setting = json.load(f)
 
